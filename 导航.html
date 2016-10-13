@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0;}
+li,ul{ list-style:none;}
+ul{ width:400px; height:50px; border:red 1px solid; position:relative; margin:10px auto;}
+ul li{ width:100px; height:50px; float:left;}
+p{ line-height:50px; margin:auto; text-align:center;}
+.yanse{ width:100px; height:10px; background-color:red; top:40px; position:absolute;}
+
+</style>
+<script>
+window.onload=function(){
+	var oul=document.getElementById("ul");
+	var ali=oul.getElementsByTagName("li");
+	var obg=ali[ali.length-1];
+	
+	 for(var i=0;i<ali.length-1;i++)
+	 {ali[i].onmouseover=function(){
+		 
+		 yidong(obg,this.offsetLeft); } }
+		 
+	
+		 }
+		 
+
+var isp=0;
+//obj物体的当前位置，it目标位置
+function yidong(obj,it){
+	//停止定时器必须带有目标参数，不带会抖
+	clearInterval(obj.txt);
+  obj.txt=setInterval(function(){
+		//计算速度   目标点减去物体当前的左边距/5
+		isp+=(it-obj.offsetLeft)/4;
+		isp*=0.7
+		obj.style.left=obj.offsetLeft+isp+"px"
+		
+		
+		},30)
+	
+	
+	
+	
+	
+	}
+
+
+</script>
+</head>
+
+<body>
+
+<ul id="ul">
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>4</p></li>
+<li class="yanse"></li>
+</ul>
+
+
+</body>
+</html>

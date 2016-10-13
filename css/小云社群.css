@@ -1,0 +1,496 @@
+body{
+	font-family: "微软雅黑";
+}
+ul li{
+	list-style: none;
+}
+.header{
+	height: 60px;
+	width: 100%;
+}
+.container{
+	clear: both;
+	width: 100%;
+	margin: 0 auto
+}
+.header .logo>img{
+	margin-top: 15px;
+	height: 30px;
+	float: left;
+}
+.nav{
+	position: relative;
+}
+.nav ul li{
+	float: left;
+	font-size: 16px;
+	line-height: 38px;
+	padding: 10px 15px;
+	margin: 0px 6px;
+}
+.nav ul li>a{
+	color: #000;
+	text-decoration: none;
+}
+.nav ul li:hover{
+	border-bottom: 2px solid #1BC9A8;
+	margin-bottom: 0px;
+}
+/*nav下拉*/
+.nav ul li>.xl{
+	position: absolute;
+	display: none;
+	padding: 0px;
+	margin: 0px;
+	background: #1BC9A8;
+	top:60px;
+	left: 267px;
+	border-radius: 5px;
+}
+.nav ul li>.xl li{
+    border-bottom: none;
+    clear: both;
+    margin: 0px;
+    line-height: 20px;
+}
+.nav ul li>.xl li>a{
+	color: #fff;
+}
+.nav ul li:hover>.xl{
+	display: block;
+}
+.nav ul li:hover>.xl li:hover{
+	background: #E6E6E6;
+	border-radius: 5px;
+}
+.nav ul li:hover>.xl li>a:hover{
+	color: #000;
+}
+
+.nav ul li>.xl-1{
+	position: absolute;
+	display: none;
+	padding: 0px;
+	margin: 0px;
+	background: #1BC9A8;
+	top:60px;
+	left: 374px;
+	border-radius: 5px;
+}
+.nav ul li>.xl-1 li{
+    border-bottom: none;
+    clear: both;
+    margin: 0px;
+    line-height: 20px;
+}
+.nav ul li>.xl-1 li>a{
+	color: #fff;
+}
+.nav ul li:hover>.xl-1{
+	display: block;
+}
+.nav ul li:hover>.xl-1 li:hover{
+	background: #E6E6E6;
+	border-radius: 5px;
+}
+.nav ul li:hover>.xl-1 li>a:hover{
+	color: #000;
+}
+/*cbl侧边栏*/
+.dl .btn-1{
+	color: #B3B3B3;
+	position:relative;
+	top: 3px;
+}
+.dl .btn-1:hover>.cbl{
+	display: block;
+	color: #000;
+}
+.cbl{
+	display: none;
+	position: absolute;
+	top: 57px;
+	left: -176px;
+	clear:both;
+	text-align: left;
+	list-style:none;
+	margin:0; 
+	padding:0;
+	width:200px;
+	margin:0 auto;
+}
+.cbl li label {
+	background: #333; 
+	border-bottom:1px solid #4e4d4d;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+	letter-spacing: 0.09em;
+	display:block;
+	padding-left:12px;
+	width:200px;
+	margin-bottom: 0;
+}
+.cbl li label:hover {
+	box-shadow: 0 0 15px 3px #222 inset;
+}
+.cbl li>.cbl-ul{
+	display: none;
+	background: #333;
+}
+.cbl li:hover>.cbl-ul{
+	display: block;
+}
+
+
+.dl{
+	float: right;
+	text-align: right;
+}
+.dl a{
+	color: #000;
+	line-height: 60px;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 0px 5px;
+}
+.dl a:hover{
+	color: #1BC9A8;
+}
+.dl .btn1{
+	border: 1px solid #1BC9A8;
+	border-radius: 9px;
+	color: #1BC9A8;
+	padding: 5px 10px;
+}
+.dl .btn1:hover{
+	color: #fff;
+	background: #1BC9A8;
+}
+/*header结束*/
+
+.banner{
+	height: 450px;
+	width: 100%;
+	background: url(https://market-cdn.app.xiaoyun.com/pudge/keystone/_178d76acfc959e4ff6bf6b4ee2f30699.png) no-repeat center;
+	background-size: cover;
+}
+.banner .banner-content{
+	text-align: center;
+	padding-top: 120px;
+}
+.banner .banner-content h1{
+	margin-top: 0px;
+	color: #fff;
+	font-size: 48px;
+}
+.banner .banner-content p{
+	color: #fff;
+	font-size: 30px;
+}
+.create-app-btn {
+    background-color: #1BC9A8;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 70px 0 20px 0;
+}
+.create-app-btn:hover{
+	color: #fff;
+	background: ##1BC9A8;
+}
+.banner-content .an {
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 26px;
+}
+/*banner结束*/
+.ios{
+	text-align: center;
+	background: #333;
+	color: #fff;
+	padding: 5px 0px;
+}
+.banner-1{
+	width: 100%;
+	min-height: 1px;
+	padding-top: 60px;
+}
+.banner-1 .title{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.banner-1 .title h1{
+	font-size: 26px;
+}
+.banner-1 .title p{
+	color: #999;
+}
+#content{
+	width: 895px;
+	min-height: 1px;
+	margin: 0 auto;
+}
+.content-ul{
+	text-align: center;
+}
+.content-ul li{
+    left: 0;
+    width: 198px;
+    height: 85px;
+    float: left;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #f5f5f5;
+    margin: 0px 7px;
+}
+.content-ul li>h3{
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+.content-ul li>p{
+	margin-bottom: 10px;
+}
+.iphone{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.iphone .first1 a{
+	display: block;
+}
+.iphone div a{
+	position: relative;
+	background: url(../images/iPhone.png) no-repeat;
+	background-size: 100% auto;
+	display: none;
+	width: 203px;
+	height: 406px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+	margin-left: 17px;
+}
+.iphone div>a>img{
+	width: 171px;
+    position: absolute;
+    left: 16px;
+    top: 48px;
+}
+/*banner-1结束*/
+.banner-2{
+	width: 100%;
+	min-height: 1px;
+	padding: 60px 0px;
+	background: #F5F5F5;
+}
+.banner-2 .title{	
+	text-align: center;
+	margin-top: 15px;
+}
+.banner-2 .title h1{
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+.banner-2 .title p{
+	color: #999;
+}
+
+
+.banner-2 .content .card{
+	padding: 0px;
+}
+.banner-2 .content .card .card-kj{
+	position: relative;
+	top: 0px;
+	color: #000;
+	display: block;
+	background: #fff;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 40px 9px;
+    border: solid 1px #e2e2e2;
+}
+.banner-2 .content .card .card-kj:hover{
+	box-shadow: 1px 1px 8px #e2e2e2;
+	border: 1px solid #e2e2e2;
+	transition: all 0.5s ease;
+	top: -10px;	
+}
+.banner-2 .content .card .card-kj:hover .card-left h3{
+	color: red;
+}
+.card .card-left{
+    min-height: 1px;
+    border-right: 1px solid#e2e2e2;
+} 
+.card .card-left img{
+	height: 50px;
+	vertical-align: middle;
+}
+.card .card-left h3{
+	padding-left: 20px;
+	display: inline;
+	line-height: 130px;
+	margin-top: 20px;
+}
+.card-right ul{
+	padding-left: 0px;
+}
+.card-right ul li{
+	text-align: center;
+	display: block;
+	color: #C5C5C5;
+	line-height: 28px;
+}
+/*banner-2结束*/
+.banner-3 {
+	margin-bottom: 60px;
+}
+.banner-3 .title{
+	margin-bottom: 40px;
+	padding-top: 40px;
+}
+.banner-3 .title h3{
+	font-size: 24px;
+    cursor: default;
+    text-align: center;
+    color: #373d41;
+    font-weight: 500;
+}
+.banner-3 .title p{
+	font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+.banner-3 .content .tp{
+	margin: 0;
+	padding: 0;
+}
+.banner-3 .content a{
+	text-decoration: none;
+	color: #fff;	
+}
+.banner-3 .comtent a img{
+	width: auto;
+    height: 230px;
+    min-width: 100%;
+/*    overflow: hidden;*/
+}
+.banner-3 .content .card{
+    position: relative;
+    top: -200px;
+    height: 180px;
+    text-align: center;	
+}
+.banner-3 .content .card:hover{
+	position: relative;
+	top: -260px;
+	transition: all 0.5s ease;	
+}
+.banner-3 .content .card:hover .nr p{
+	display: block;
+	animation: spin 0.7s linear;
+}
+@keyframes spin{
+	0%{opacity: 0;}
+	30%{opacity: 0.3;}
+	50%{opacity: 0.5;}
+	70%{opacity: 0.7;}
+	100%{opacity: 1;}
+}
+.banner-3 .content .card .nr p{
+	display: none;
+}
+/*banner-3结束*/
+
+.banner-4{
+	background: ur;
+}
+/*banner-4结束*/
+.footer{
+    background-position: top center;
+    background: #333;
+    color: #999;	
+}
+.footer h4{
+	margin-top: 30px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 16px;
+}
+.footer .span1{
+	margin: 2px 0;
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #fa460a;
+}
+.footer ul{
+	list-style: none;
+    padding: 0;
+}
+.footer ul li a{
+	color: #999;
+	text-decoration: none;
+}
+.footer ul li a:hover{
+	color: #fff;
+}
+.erweima{
+	list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.erweima li{
+	float: right;
+    margin-left: 40px;
+}
+.erweima li div{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.erweima li div img{
+	width: 100%;
+    max-width: 90px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.erweima li div p{
+	font-size: 12px;
+    margin-top: 8px;
+}
+.footer hr{
+	border-color: #999;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(153,153,153,0.1);
+}
+.text1>p{
+    margin-bottom: 2px;
+    margin: 0 0 10px;
+}
+.text1 p a{
+	text-decoration: none;
+	color: #999;
+}
+.text1 p a:hover{
+	color: #fff;
+}
+/*footer结束*/
+
+/*修改---王江*/
+.solution-card {
+	height: 230px;
+	overflow: hidden;
+}
+.solution-card .card .bg img {
+	height:40px;
+	/*overflow: hidden;*/
+}

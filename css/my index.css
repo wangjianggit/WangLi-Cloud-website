@@ -1,0 +1,150 @@
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+.navbar{
+	background: #1BC9A8;
+	border-bottom: none;
+	position: fixed;
+}
+.container{
+	padding-bottom: .5rem;
+}
+.nav-left{
+	margin-top: 3rem;
+	float: left;
+	padding-bottom: 2rem;
+}
+.nav-right{
+	margin-top: 3rem;
+	padding-bottom: 2rem;
+}
+.nav-right>ul{
+	float: right;
+}
+.nav-right>ul li{
+	display: inline-block;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.nav-right>ul li>a{
+	font-size: 2rem;
+	color: #fff;
+}
+.nav-right>ul li:hover{
+	background: #fff;
+	border-radius: .3rem;
+}
+.active{
+	background: #fff;
+	border-radius: .3rem;
+}
+.nav-right>ul li>a:hover{
+	color:#1BC9A8;
+}
+/*nav结束*/
+.content-1{
+	padding-top: 20rem;
+	height: 1000px;
+	background: #1BC9A8;
+	text-align: center;
+	color: #fff;
+}
+.content-1>h2{
+	font-size: calc(50px);
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.content-1>h3{
+	font-size: calc(30px);
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.content-1>a{
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	background: #FF4F60;
+	border-radius: 1rem;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	font-size: calc(20px);
+	margin-top: 30px;
+}
+.Computer>img{
+	display: inline-block;
+	max-width: 100%;
+    height: auto;
+	margin-top: 7rem;
+}
+/*content-1结束*/
+.content-2>.title,.content-3>.title{
+	padding-top: 5rem;
+}
+.content-2>.title>h2,.content-2>.title>p,.content-2>.content>p,.content-3>.title>h2,.content-3>.title>p{
+	text-align: center;
+}
+.content-2>.title{
+	padding-top: 10rem;
+}
+.content-2>.title>p,.content-3>.title>p{
+	color: #B3B3B3;
+	font-size: 1.7rem;
+}
+.content,.content-2>.title,.content-2>.content{
+	margin-left: 3rem;
+}
+.content-2>.content{
+	padding-bottom: 8rem;
+}
+.content-2>.content>p{
+	color: #555555;
+	font-size: 2rem;
+	padding-top: 3rem;
+	line-height: 3rem;
+}
+/*content-2结束*/
+.content-3{
+	background: #EEEEEE;
+}
+.php{
+	margin-top: 2rem;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 3px 3px 15px 
+}
+.php>.up{
+	background:#FF4F60;
+}
+.php>.up>img{
+	padding-left: 17rem;
+	padding-top: 4rem;
+}
+.php>.up>h2{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 4rem;
+}
+.php>.down{
+	background: #fff;
+	margin-top: -2rem;	
+}
+.php>.down>h3{
+	text-align: center;
+	padding-top: 5rem;
+}
+.php>.down>p{
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: #777777;
+	font-size: 1.5rem;
+
+}
+.bt{
+	padding-bottom: 5rem;
+}

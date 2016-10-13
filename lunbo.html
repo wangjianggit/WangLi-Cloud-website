@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+   <script src="js/jquery-1.11.3.js"></script>
+	</head>
+	<body>
+		<div class="md-modal md-effect-1">
+			<div class="md-content">
+				<h3>tishi</h3>
+				<div>
+					<p>hviulvl</p>
+					<button class="left">做</button>
+					<button class="right">有</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$("input.place").focus(function(){
+					$("#modal-4").show();
+					var this=$(this);
+					$("left").click(function(){
+						$(this).val("做");
+					});
+					$("right").click(function(){
+						$(this).val("有");
+					});
+				})
+			})
+		</script>
+	</body>
+</html>

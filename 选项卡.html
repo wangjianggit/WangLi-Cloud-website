@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		    *{
+		    	margin: 0;
+		    	padding: 0;
+		    }
+		    a{
+		    	text-decoration: none;
+		    	color: #000;
+		    }
+			#kj{
+				width: 500px;
+				height: 250px;
+				margin: 0 auto;
+			}
+			.active{background: #1BC9A8;}
+			.nav{
+				list-style: none;
+				height: 50px;
+				background: #D4D4D4;
+			}
+			.nav>li{
+				width: 100px;
+				float: left;
+				text-align: center;
+				line-height: 50px;
+			}
+			.nav>li:hover{
+				background: #1BC9A8;
+			}
+			.nav>li a:hover{
+				color: #D58512;
+			}
+			.content>div{
+				width: 500px;
+				height: 200px;
+				line-height: 200px;
+				text-align: center;
+				background: #FAF2CC;
+			}
+			.content>.nr{
+				display: block;
+			}
+			.content>div{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="kj">
+				<ul class="nav">
+					<li class="active"><a href="javascript:;">新闻</a></li>
+					<li><a href="javascript:;">军事</a></li>
+					<li><a href="javascript:;">资讯</a></li>
+					<li><a href="javascript:;">国际</a></li>
+					<li><a href="javascript:;">国内</a></li>
+				</ul>			</nav>	
+			<div class="content">
+				<div class="nr">1111111111111</div>
+				<div>2222222222222</div>
+				<div>3333333333333</div>
+				<div>4444444444444</div>
+				<div>5555555555555</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			window.onload=function(){
+				var kj=document.getElementById("kj");
+				var oli=kj.getElementsByClassName("nav")[0].getElementsByTagName("li");
+				var div1=kj.getElementsByClassName("content")[0].getElementsByTagName("div");
+				for (var i=1;1<oli.length;i++) {
+					oli[i].index=i;
+					oli[i].onclick=function(){
+	        		for (var j=0;j<oli.length;j++) {
+	        			oli[j].className=' ';
+	        			div1[j].className=" ";
+	        		}
+        		oli[this.index].className='active';
+        		div1[this.index].className='nr';
+
+        	}
+				}
+				
+			}
+		</script>
+	</body>
+</html>
