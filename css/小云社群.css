@@ -83,7 +83,7 @@ ul li{
     margin: 0px;
     line-height: 20px;
 }
-.nav ul li>.xl-1 li>a{
+.nav ul li .xl-1 li a{
 	color: #fff;
 }
 .nav ul li:hover>.xl-1{
@@ -195,7 +195,7 @@ ul li{
 }
 .create-app-btn:hover{
 	color: #fff;
-	background: ##1BC9A8;
+	background: #1BC9A8;
 }
 .banner-content .an {
     padding: 10px 50px;
@@ -409,7 +409,7 @@ ul li{
 /*banner-3结束*/
 
 .banner-4{
-	background: ur;
+	/*background: ur;*/
 }
 /*banner-4结束*/
 .footer{
